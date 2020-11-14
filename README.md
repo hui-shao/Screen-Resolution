@@ -15,7 +15,7 @@ A program based on C++/Python to customize screen resolution.
 接受传入参数，并将传入的参数值设置为分辨率。要求传入参数在“当前系统所支持的分辨率”列表内
 
 ```
-Useage: [Width] [Height]
+Usage: [Width] [Height]
 ```
 
 示例: 

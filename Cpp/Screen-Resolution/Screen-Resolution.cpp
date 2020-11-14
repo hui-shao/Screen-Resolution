@@ -8,7 +8,7 @@ void set_resolution(int width, int height)
     //EnumDisplaySettings函数得到显示设备的一个图形模式设备，通过对该函数一系列的调用可以得到显示设备所有的图形模式信息。
     EnumDisplaySettings(0, ENUM_CURRENT_SETTINGS, &NewDevMode);
 
-    std::cout << "Current: " << NewDevMode.dmPelsWidth << "x" << NewDevMode.dmPelsHeight << "    " << NewDevMode.dmDisplayFrequency << "Hz\n" << std::endl;
+    std::cout << "Current: " << NewDevMode.dmPelsWidth << "x" << NewDevMode.dmPelsHeight << " " << NewDevMode.dmDisplayFrequency << "Hz\n" << std::endl;
 
     //修改下DEVMODE相关成员变量的值
     NewDevMode.dmFields = DM_PELSWIDTH | DM_PELSHEIGHT;
@@ -32,7 +32,7 @@ int main(int argc, char** argv)
     }
     else
     {
-        std::cout << "Invalid arguments, have nothing to do...\nUseage: [Width] [Height]" << std::endl;
+        std::cout << "Invalid arguments, have nothing to do...\nUsage: [Width] [Height]" << std::endl;
     }
     std::cout << "\nPress any key to exit..." << std::endl;
     system("pause>nul");
