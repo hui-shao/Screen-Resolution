@@ -1,5 +1,14 @@
 ﻿#include "Screen-Resolution.h"
 
+void init_console()
+{
+    SetConsoleTitle("Screen-Resolution v0.1.2 by Hui-Shao");
+    std::cout << "\nIniting..." << std::endl;
+    system("mode con cols=90 lines=30");
+    system("color 9f");
+    std::cout << " " << std::endl;
+}
+
 void set_resolution(int width, int height)
 {
     //定义DEVMODE结构体变量
@@ -22,8 +31,8 @@ void set_resolution(int width, int height)
 
 int main(int argc, char** argv)
 {
+    init_console();
     int w, h;
-    std::cout << "" << std::endl;
     if (argc == 3)
     {
         w = atoi(argv[1]);
@@ -32,6 +41,7 @@ int main(int argc, char** argv)
     }
     else
     {
+        system("color cf");
         std::cout << "Invalid arguments, have nothing to do...\nUsage: [Width] [Height]" << std::endl;
     }
     std::cout << "\nPress any key to exit..." << std::endl;
