@@ -1,3 +1,11 @@
+# 分支说明
+
+**该分支保留了原来的Python版本 (目前已弃用)**
+
+------
+
+
+
 # Screen-Resolution / 屏幕分辨率设置
 
 A program based on C++/Python to customize screen resolution. 

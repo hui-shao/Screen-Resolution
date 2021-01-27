@@ -1,5 +1,0 @@
-﻿cmake_minimum_required (VERSION 3.8)
-project ("Screen-Resolution")
-add_subdirectory ("Screen-Resolution")
-set (Screen-Resolution_VERSION_MAJOR 1)
-set (Screen-Resolution_VERSION_MINOR 0)
